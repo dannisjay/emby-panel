@@ -1,0 +1,13 @@
+services:
+  emby-panel:
+    image: dannis1514/emby-panel:latest
+    container_name: emby-panel
+    ports:
+      - "8080:80"
+    volumes:
+      - ./config.php:/var/www/html/config.php:ro
+      - ./data:/data
+      - ./logs:/logs
+    environment:
+      TZ: Asia/Shanghai
+    restart: unless-stopped
