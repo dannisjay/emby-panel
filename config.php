@@ -1,5 +1,5 @@
 <?php
-// /opt/emby_panel/config.php
+// /opt/emby-panel/config.php
 // 统一配置文件 - 所有配置信息集中管理
 
 return [
