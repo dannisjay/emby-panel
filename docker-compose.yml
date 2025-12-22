@@ -6,8 +6,8 @@ services:
       - "8080:80"
     volumes:
       - ./config.php:/var/www/html/config.php:ro
-      - ./data:/data
-      - ./logs:/logs
+      - ./data:/data  #自动创建
+      - ./logs:/logs  #自动创建
     environment:
       TZ: Asia/Shanghai
     restart: unless-stopped
