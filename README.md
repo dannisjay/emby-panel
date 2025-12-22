@@ -17,8 +17,6 @@
 ### 目录结构
 ```bash
 /opt/emby-panel
-├── data/
-├── logs/
 ├── config.php
 ├── docker-compose.yml
 ```
@@ -27,18 +25,8 @@
 ```bash
 https://raw.githubusercontent.com/dannisjay/emby-panel/refs/heads/main/config.php
 ```
-### 2.修改权限
-```bash
-sudo chmod 775 /opt/emby-panel/data
-```
-```bash
-sudo chmod 775 /opt/emby-panel/logs
-```
-```bash
-sudo chmod 775 /opt/emby-panel/config.php
-```
 
-### 3. docker-compose.yml
+### 2. docker-compose.yml
 ```bash
 services:
   emby-panel:
@@ -55,7 +43,7 @@ services:
     restart: unless-stopped
 ```
 ### 3. 访问面板
-#### 浏览器打开下面地址
+#### 浏览器打开
 ```bash
 http://你的服务器IP:8080
 ```
